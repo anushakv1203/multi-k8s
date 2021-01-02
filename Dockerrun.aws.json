@@ -15,14 +15,12 @@
        "essential": false,
        "memory": 128
      },
-     },
      {
        "name": "worker",
        "image": "anushakv71/multi-worker",
        "hostname": "worker",
        "essential": false,
        "memory": 128
-     },
      },
      {
        "name": "nginx",
@@ -37,7 +35,6 @@
         ],
         "links": ["client", "server"],
        "memory": 128
-     },
      }
    ]
 }
