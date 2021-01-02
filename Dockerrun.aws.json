@@ -3,25 +3,25 @@
    "containerDefinitions": [
      {
        "name": "client",
-       "image": "anushakv71/multi-client"
+       "image": "anushakv71/multi-client",
        "hostname": "client",
        "essential": false
      },
      {
        "name": "server",
-       "image": "anushakv71/multi-server"
+       "image": "anushakv71/multi-server",
        "hostname": "api",
        "essential": false
      },
      {
        "name": "worker",
-       "image": "anushakv71/multi-worker"
+       "image": "anushakv71/multi-worker",
        "hostname": "worker",
        "essential": false
      },
      {
        "name": "nginx",
-       "image": "anushakv71/multi-nginx"
+       "image": "anushakv71/multi-nginx",
        "hostname": "nginx",
        "essential": true,
        "portMappings": [
