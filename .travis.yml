@@ -10,7 +10,7 @@ script:
 
 after_success:
    - docker build -t anushakv71/multi-client ./client
-   - docker build -t anushakv71/multi-nginx ./nginx
+ #  - docker build -t anushakv71/multi-nginx ./nginx
    - docker build -t anushakv71/multi-server ./server
    - docker build -t anushakv71/multi-worker ./worker
 
@@ -19,6 +19,6 @@ after_success:
 
 # push these images to docker hub
    - docker push anushakv71/multi-client
-   - docker push anushakv71/multi-nginx 
+  # - docker push anushakv71/multi-nginx 
    - docker push anushakv71/multi-server
    - docker push anushakv71/multi-worker
